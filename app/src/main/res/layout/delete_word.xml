@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/delete_word_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Word to delete"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textCursorDrawable="@null"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/delete_word_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="44dp"
+        android:text="Delete"
+        android:layout_below="@+id/delete_word_field"
+        android:layout_alignLeft="@+id/delete_word_field"
+        android:layout_alignStart="@+id/delete_word_field"
+        android:onClick="deleteWord"/>
+
+</RelativeLayout>

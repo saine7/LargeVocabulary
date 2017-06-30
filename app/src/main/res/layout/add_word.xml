@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_word_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/word_meaning_field"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/word_meaning_field"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="Word to add"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/word_meaning_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_word_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Meaning"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="?attr/colorControlHighlight"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/add_word_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="Add Word"
+        android:layout_below="@+id/word_meaning_field"
+        android:layout_centerHorizontal="true"
+        android:onClick="addWord"/>
+</RelativeLayout>
